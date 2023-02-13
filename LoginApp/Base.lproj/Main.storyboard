@@ -23,12 +23,12 @@
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fbb-N9-e4Z">
                                         <rect key="frame" x="0.0" y="0.0" width="256" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jbx-H9-X6K">
                                         <rect key="frame" x="0.0" y="50" width="256" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -127,7 +127,6 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BwF-0h-2qI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bGq-SO-KSc" firstAttribute="centerX" secondItem="OlN-bW-d5H" secondAttribute="centerX" id="2zw-P0-Wnx"/>
                             <constraint firstItem="Yjd-Ic-Xka" firstAttribute="top" secondItem="BwF-0h-2qI" secondAttribute="top" constant="160" id="74x-Cw-nWg"/>

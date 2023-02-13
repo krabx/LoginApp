@@ -46,6 +46,12 @@ class LoginViewController: UIViewController {
         passwordTF.text = ""
     }
     
+    // Метод для скрытия клавиатуры тапом по экрану
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
+    
 }
 
 extension LoginViewController {
