@@ -11,9 +11,9 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet var welcomeLabel: UILabel!
     
-    private let gradientLayer = CAGradientLayer()
-    
     var welcomeText: String!
+    
+    private let gradientLayer = CAGradientLayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,20 +21,9 @@ class WelcomeViewController: UIViewController {
         setupViewColor()
     }
     
-    
-
-    @IBAction func logOutButtonPressed() {
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+    private func setupViewColor() {
         gradientLayer.frame = view.bounds
-    }
-    
-    private func setupViewColor() { self.view.layer.insertSublayer(gradientLayer, at: 0)
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
         gradientLayer.colors = [UIColor.yellow.cgColor, UIColor.purple.cgColor]
-        
-        
     }
-
 }

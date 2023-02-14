@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DF03E24F-02E3-4287-A197-7FDA82F864EF"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E0C20DE-F9A6-425A-AD59-518E34E23A55"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoginApp/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "LoginViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3E0C20DE-F9A6-425A-AD59-518E34E23A55 - c87ae7b86f52f0d9"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoginApp.LoginViewController.passwordTF.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "LoginApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bogdanradcenko/Desktop/LoginApp/LoginApp/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "3E0C20DE-F9A6-425A-AD59-518E34E23A55 - cadb773e018524cd"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoginApp.LoginViewController.passwordTF.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "LoginApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bogdanradcenko/Desktop/LoginApp/LoginApp/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "3E0C20DE-F9A6-425A-AD59-518E34E23A55 - eca431d07a8a1dda"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoginApp.LoginViewController.passwordTF.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "LoginApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bogdanradcenko/Desktop/LoginApp/LoginApp/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "3E0C20DE-F9A6-425A-AD59-518E34E23A55 - abf9eb85eb5a705c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoginApp.LoginViewController.passwordTF.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "LoginApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bogdanradcenko/Desktop/LoginApp/LoginApp/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "3E0C20DE-F9A6-425A-AD59-518E34E23A55 - bad051913e301e2d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoginApp.LoginViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; LoginApp.LoginViewController"
+                  moduleName = "LoginApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bogdanradcenko/Desktop/LoginApp/LoginApp/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "3E0C20DE-F9A6-425A-AD59-518E34E23A55 - b7d3e300e95e2d56"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LoginApp.LoginViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;LoginApp.LoginViewController&gt;"
+                  moduleName = "LoginApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bogdanradcenko/Desktop/LoginApp/LoginApp/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
