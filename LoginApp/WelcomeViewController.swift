@@ -21,6 +21,7 @@ class WelcomeViewController: UIViewController {
         setupViewColor()
     }
     
+    
 
     @IBAction func logOutButtonPressed() {
     }

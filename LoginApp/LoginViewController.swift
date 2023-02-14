@@ -12,6 +12,12 @@ class LoginViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
+    @IBOutlet var forgotNameButton: UIButton!
+    
+    @IBOutlet var forgotPasswordButton: UIButton!
+    
+    @IBOutlet var logInButton: UIButton!
+    
     private let correctUserName = "1"
     private let correctPassword = "1"
     
@@ -20,6 +26,22 @@ class LoginViewController: UIViewController {
 
     }
 
+    
+    @IBAction func forgotButtonPressed(_ sender: UIButton) {
+        switch sender {
+        case forgotNameButton:
+            showAlert(withTitle: "Oops!", andMessage: "Your userName is 1")
+        case forgotPasswordButton:
+            showAlert(withTitle: "Oops!", andMessage: "Your password is 1")
+        default:
+            guard let truePassword = passwordTF.text, truePassword == correctPassword else {
+                showAlert(withTitle: "invalid login or password", andMessage: "Please input correct login and password")
+                return
+            }
+        }
+    }
+    
+    /*
     @IBAction func logInButtonPressed() {
         guard let truePassword = passwordTF.text, truePassword == correctPassword else {
             showAlert(withTitle: "invalid login or password", andMessage: "Please input correct login and password")
@@ -35,6 +57,7 @@ class LoginViewController: UIViewController {
         showAlert(withTitle: "Oops!", andMessage: "Your password is 1")
     }
     
+     */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.welcomeText = "Welcome, \(userNameTF.text ?? "")"
