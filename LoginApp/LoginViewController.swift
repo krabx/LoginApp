@@ -14,32 +14,30 @@ final class LoginViewController: UIViewController {
     
     @IBOutlet var forgotNameButton: UIButton!
     @IBOutlet var forgotPasswordButton: UIButton!
-    @IBOutlet var logInButton: UIButton!
     
     private let correctUserName = "1"
     private let correctPassword = "1"
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(true)
         super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController
-        else { return }
+        guard let welcomeVC = segue.destination as? WelcomeViewController else {
+            return
+        }
         welcomeVC.welcomeText = "Welcome, \(userNameTF.text ?? "")"
     }
     
     @IBAction func forgotButtonPressed(_ sender: UIButton) {
         switch sender {
         case forgotNameButton:
-            showAlert(withTitle: "Oops!", andMessage: "Your userName is 1")
+            showAlert(withTitle: "Oops!", andMessage: "Your userName is \(correctUserName)")
         case forgotPasswordButton:
-            showAlert(withTitle: "Oops!", andMessage: "Your password is 1")
+            showAlert(withTitle: "Oops!", andMessage: "Your password is \(correctPassword)")
         default:
-            guard let
-                    truePassword = passwordTF.text,
-                    truePassword == correctPassword
+            guard (passwordTF.text == correctPassword && userNameTF.text == correctUserName)
             else {
                 showAlert(
                     withTitle: "invalid login or password",
@@ -50,7 +48,7 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let _ = segue.source as? WelcomeViewController else { return }
+        let _ = segue.source as? WelcomeViewController
         userNameTF.text = ""
         passwordTF.text = ""
     }

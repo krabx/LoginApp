@@ -41,7 +41,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log In"/>
                                         <connections>
-                                            <action selector="forgotButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9R2-h5-VNW"/>
+                                            <action selector="forgotButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GwC-GF-ecX"/>
                                             <segue destination="khk-Xh-IoS" kind="presentation" modalPresentationStyle="fullScreen" id="jTk-6t-Q7u"/>
                                         </connections>
                                     </button>
@@ -85,7 +85,6 @@
                     <connections>
                         <outlet property="forgotNameButton" destination="EoM-MR-3n7" id="O2W-EO-BAa"/>
                         <outlet property="forgotPasswordButton" destination="nDs-37-8Hx" id="GDV-g2-Ld1"/>
-                        <outlet property="logInButton" destination="ASY-bf-2wc" id="mf8-PQ-RJQ"/>
                         <outlet property="passwordTF" destination="jbx-H9-X6K" id="17G-eL-mRt"/>
                         <outlet property="userNameTF" destination="fbb-N9-e4Z" id="M3S-BA-yQG"/>
                     </connections>
