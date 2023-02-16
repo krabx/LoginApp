@@ -58,16 +58,40 @@
 		6EAF31D1299ACF0100CCDDB6 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				6EAF31D2299ACF0100CCDDB6 /* AppDelegate.swift */,
-				6EAF31D4299ACF0100CCDDB6 /* SceneDelegate.swift */,
-				6EAF31D6299ACF0100CCDDB6 /* LoginViewController.swift */,
-				6EAF31E6299ADEF300CCDDB6 /* WelcomeViewController.swift */,
-				6EAF31D8299ACF0100CCDDB6 /* Main.storyboard */,
+				6ED7A6E1299EB2450036F64D /* App */,
+				6ED7A6E3299EB2BE0036F64D /* ViewControllers */,
+				6ED7A6E2299EB2550036F64D /* StoryBoards */,
 				6EAF31DB299ACF0200CCDDB6 /* Assets.xcassets */,
-				6EAF31DD299ACF0200CCDDB6 /* LaunchScreen.storyboard */,
-				6EAF31E0299ACF0200CCDDB6 /* Info.plist */,
 			);
 			path = LoginApp;
+			sourceTree = "<group>";
+		};
+		6ED7A6E1299EB2450036F64D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6EAF31D2299ACF0100CCDDB6 /* AppDelegate.swift */,
+				6EAF31D4299ACF0100CCDDB6 /* SceneDelegate.swift */,
+				6EAF31E0299ACF0200CCDDB6 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6ED7A6E2299EB2550036F64D /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				6EAF31D8299ACF0100CCDDB6 /* Main.storyboard */,
+				6EAF31DD299ACF0200CCDDB6 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		6ED7A6E3299EB2BE0036F64D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6EAF31D6299ACF0100CCDDB6 /* LoginViewController.swift */,
+				6EAF31E6299ADEF300CCDDB6 /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +317,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = USCX539P25;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -325,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = USCX539P25;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
