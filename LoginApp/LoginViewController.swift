@@ -27,23 +27,32 @@ final class LoginViewController: UIViewController {
         guard let welcomeVC = segue.destination as? WelcomeViewController else {
             return
         }
-        welcomeVC.welcomeText = "Welcome, \(userNameTF.text ?? "")"
+        welcomeVC.welcomeText = correctUserName
+    }
+    
+    
+    @IBAction func logInButtonPressed() {
+        guard passwordTF.text == correctPassword, userNameTF.text == correctUserName
+        else {
+            showAlert(
+                withTitle: "invalid login or password",
+                andMessage: "Please input correct login and password",
+                textField: passwordTF
+            )
+            return
+        }
+        performSegue(withIdentifier: "openWelcomeVC", sender: nil)
     }
     
     @IBAction func forgotButtonPressed(_ sender: UIButton) {
-        switch sender {
-        case forgotNameButton:
-            showAlert(withTitle: "Oops!", andMessage: "Your userName is \(correctUserName)")
-        case forgotPasswordButton:
-            showAlert(withTitle: "Oops!", andMessage: "Your password is \(correctPassword)")
-        default:
-            guard (passwordTF.text == correctPassword && userNameTF.text == correctUserName)
-            else {
-                showAlert(
-                    withTitle: "invalid login or password",
-                    andMessage: "Please input correct login and password")
-                return
-            }
+        if sender == forgotNameButton {
+            showAlert(withTitle: "Oops!",
+                      andMessage: "Your userName is \(correctUserName)"
+            )
+        } else {
+            showAlert(withTitle: "Oops!",
+                      andMessage: "Your password is \(correctPassword)"
+            )
         }
     }
     
@@ -55,14 +64,18 @@ final class LoginViewController: UIViewController {
 }
 
 extension LoginViewController {
-    private func showAlert(withTitle: String, andMessage: String) {
+    private func showAlert(
+        withTitle: String,
+        andMessage: String,
+        textField: UITextField? = nil)
+    {
         let alert = UIAlertController(
             title: withTitle,
             message: andMessage,
             preferredStyle: .alert
         )
         let actionButton = UIAlertAction(title: "OK", style: .default) { _ in
-            self.passwordTF.text = ""
+            textField?.text = ""
         }
         
         alert.addAction(actionButton)

@@ -41,8 +41,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log In"/>
                                         <connections>
-                                            <action selector="forgotButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GwC-GF-ecX"/>
-                                            <segue destination="khk-Xh-IoS" kind="presentation" modalPresentationStyle="fullScreen" id="jTk-6t-Q7u"/>
+                                            <action selector="logInButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oq3-Qm-bWZ"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6Tr-sD-zX8">
@@ -87,6 +86,7 @@
                         <outlet property="forgotPasswordButton" destination="nDs-37-8Hx" id="GDV-g2-Ld1"/>
                         <outlet property="passwordTF" destination="jbx-H9-X6K" id="17G-eL-mRt"/>
                         <outlet property="userNameTF" destination="fbb-N9-e4Z" id="M3S-BA-yQG"/>
+                        <segue destination="khk-Xh-IoS" kind="presentation" identifier="openWelcomeVC" modalPresentationStyle="fullScreen" id="CC7-h5-mQa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
