@@ -49,15 +49,9 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func forgotButtonPressed(_ sender: UIButton) {
-        if sender == forgotNameButton {
-            showAlert(withTitle: "Oops!",
-                      andMessage: "Your userName is \(correctUserName)"
-            )
-        } else {
-            showAlert(withTitle: "Oops!",
-                      andMessage: "Your password is \(correctPassword)"
-            )
-        }
+        sender == forgotNameButton
+            ? showAlert(withTitle: "Oops!", andMessage: "Your userName is \(correctUserName)")
+            : showAlert(withTitle: "Oops!", andMessage: "Your password is \(correctPassword)")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue, sender: Any?) {
