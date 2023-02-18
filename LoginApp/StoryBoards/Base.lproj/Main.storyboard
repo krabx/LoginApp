@@ -168,7 +168,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q5D-QY-cKq">
-                                <rect key="frame" x="16" y="262" width="288" height="88"/>
+                                <rect key="frame" x="16" y="262" width="288" height="120"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="IVP-xO-bh6">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="24"/>
@@ -221,6 +221,23 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9VH-g8-23Q">
+                                        <rect key="frame" x="0.0" y="96" width="288" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Увлечения:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvs-Ua-aJY">
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4R-zB-4mB">
+                                                <rect key="frame" x="152" y="0.0" width="136" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -244,6 +261,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="dateOfBirthLabel" destination="ZNi-ZZ-4Fh" id="a5d-FV-7Ux"/>
+                        <outlet property="hobbyLabel" destination="o4R-zB-4mB" id="hN3-SF-lyo"/>
                         <outlet property="myFaceImage" destination="ins-KN-7kl" id="8Xs-G5-Q83"/>
                         <outlet property="nameLabel" destination="TAb-Tt-fS6" id="nub-pf-PwL"/>
                         <outlet property="surnameLabel" destination="wdO-EO-t6H" id="hbJ-O8-0U0"/>
@@ -413,7 +431,7 @@
                     <tabBarItem key="tabBarItem" title="About me" image="face.smiling" catalog="system" id="UMV-4U-3ad"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NNO-hk-vII">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

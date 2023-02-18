@@ -14,6 +14,7 @@ final class AboutMeViewController: UIViewController {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var surnameLabel: UILabel!
     @IBOutlet var dateOfBirthLabel: UILabel!
+    @IBOutlet var hobbyLabel: UILabel!
     
     private let upColor = UIColor(
         red: 255/255,
@@ -42,6 +43,7 @@ final class AboutMeViewController: UIViewController {
         nameLabel.text = user.person.personName
         surnameLabel.text = user.person.personSurname
         dateOfBirthLabel.text = user.person.dateOfBirth
+        hobbyLabel.text = user.person.hobby
         
         view.addGradientLayer(
             firstColor: upColor,
