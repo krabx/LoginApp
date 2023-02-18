@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PetProjectViewController: UIViewController {
+final class PetProjectViewController: UIViewController {
 
     @IBOutlet var passwordgeneratorImage: UIImageView!
     @IBOutlet var botRemainderImage: UIImageView!

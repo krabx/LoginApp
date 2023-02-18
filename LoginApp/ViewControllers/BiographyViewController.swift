@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BiographyViewController: UIViewController {
+final class BiographyViewController: UIViewController {
 
     @IBOutlet var biographyLabel: UILabel!
     
@@ -34,7 +34,9 @@ class BiographyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         biographyLabel.text = user.person.biography
+        
         view.addGradientLayer(
             firstColor: upColor,
             secondColor: middleColor,

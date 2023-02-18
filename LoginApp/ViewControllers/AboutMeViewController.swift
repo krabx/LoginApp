@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AboutMeViewController: UIViewController {
+final class AboutMeViewController: UIViewController {
     
     @IBOutlet var myFaceImage: UIImageView!
     
@@ -38,6 +38,7 @@ class AboutMeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         nameLabel.text = user.person.personName
         surnameLabel.text = user.person.personSurname
         dateOfBirthLabel.text = user.person.dateOfBirth
@@ -52,6 +53,4 @@ class AboutMeViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         myFaceImage.layer.cornerRadius = myFaceImage.frame.height / 2
     }
-
-
 }
