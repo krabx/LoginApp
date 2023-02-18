@@ -102,7 +102,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGq-SO-KSc">
-                                <rect key="frame" x="125" y="403" width="70" height="36"/>
+                                <rect key="frame" x="125" y="463" width="70" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Log Out">
@@ -113,9 +113,9 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="Yjd-Ic-Xka">
-                                <rect key="frame" x="16" y="160" width="288" height="131"/>
+                                <rect key="frame" x="16" y="80" width="288" height="131"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2u-U4-mWJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2u-U4-mWJ">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <nil key="textColor"/>
@@ -132,10 +132,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bGq-SO-KSc" firstAttribute="centerX" secondItem="OlN-bW-d5H" secondAttribute="centerX" id="2zw-P0-Wnx"/>
-                            <constraint firstItem="Yjd-Ic-Xka" firstAttribute="top" secondItem="BwF-0h-2qI" secondAttribute="top" constant="160" id="74x-Cw-nWg"/>
+                            <constraint firstItem="Yjd-Ic-Xka" firstAttribute="top" secondItem="BwF-0h-2qI" secondAttribute="top" constant="80" id="74x-Cw-nWg"/>
                             <constraint firstItem="BwF-0h-2qI" firstAttribute="trailing" secondItem="Yjd-Ic-Xka" secondAttribute="trailing" constant="16" id="Gv8-w8-F58"/>
                             <constraint firstItem="Yjd-Ic-Xka" firstAttribute="leading" secondItem="BwF-0h-2qI" secondAttribute="leading" constant="16" id="hYa-Xe-Bkn"/>
-                            <constraint firstItem="BwF-0h-2qI" firstAttribute="bottom" secondItem="bGq-SO-KSc" secondAttribute="bottom" constant="80" id="igf-1B-kZV"/>
+                            <constraint firstItem="BwF-0h-2qI" firstAttribute="bottom" secondItem="bGq-SO-KSc" secondAttribute="bottom" constant="20" id="igf-1B-kZV"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="W9a-BF-V17"/>
@@ -375,7 +375,7 @@
                     <tabBarItem key="tabBarItem" title="About me" image="face.smiling" catalog="system" id="UMV-4U-3ad"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NNO-hk-vII">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

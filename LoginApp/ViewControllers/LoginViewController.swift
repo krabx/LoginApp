@@ -15,8 +15,13 @@ final class LoginViewController: UIViewController {
     @IBOutlet var forgotNameButton: UIButton!
     @IBOutlet var forgotPasswordButton: UIButton!
     
-    private let correctUserName = "1"
-    private let correctPassword = "1"
+    private let correctUserName = user.userName
+    private let correctPassword = user.userPassword
+    
+    override func viewDidLoad() {
+        userNameTF.text = correctUserName
+        passwordTF.text = correctPassword
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)

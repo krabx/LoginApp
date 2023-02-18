@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E9D4E7229A102D60026ACDF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D4E7129A102D60026ACDF /* User.swift */; };
+		6E9D4E7429A10A840026ACDF /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D4E7329A10A840026ACDF /* AboutMeViewController.swift */; };
+		6E9D4E7629A10AB00026ACDF /* PetProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D4E7529A10AB00026ACDF /* PetProjectViewController.swift */; };
+		6E9D4E7829A10AD70026ACDF /* BiographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D4E7729A10AD70026ACDF /* BiographyViewController.swift */; };
 		6EAF31D3299ACF0100CCDDB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF31D2299ACF0100CCDDB6 /* AppDelegate.swift */; };
 		6EAF31D5299ACF0100CCDDB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF31D4299ACF0100CCDDB6 /* SceneDelegate.swift */; };
 		6EAF31D7299ACF0100CCDDB6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF31D6299ACF0100CCDDB6 /* LoginViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E9D4E7129A102D60026ACDF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6E9D4E7329A10A840026ACDF /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		6E9D4E7529A10AB00026ACDF /* PetProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetProjectViewController.swift; sourceTree = "<group>"; };
+		6E9D4E7729A10AD70026ACDF /* BiographyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyViewController.swift; sourceTree = "<group>"; };
 		6EAF31CF299ACF0100CCDDB6 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EAF31D2299ACF0100CCDDB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EAF31D4299ACF0100CCDDB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E9D4E7029A1028D0026ACDF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E9D4E7129A102D60026ACDF /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		6EAF31C6299ACF0100CCDDB6 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +74,7 @@
 		6EAF31D1299ACF0100CCDDB6 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				6E9D4E7029A1028D0026ACDF /* Models */,
 				6ED7A6E1299EB2450036F64D /* App */,
 				6ED7A6E3299EB2BE0036F64D /* ViewControllers */,
 				6ED7A6E2299EB2550036F64D /* StoryBoards */,
@@ -90,6 +107,9 @@
 			children = (
 				6EAF31D6299ACF0100CCDDB6 /* LoginViewController.swift */,
 				6EAF31E6299ADEF300CCDDB6 /* WelcomeViewController.swift */,
+				6E9D4E7329A10A840026ACDF /* AboutMeViewController.swift */,
+				6E9D4E7529A10AB00026ACDF /* PetProjectViewController.swift */,
+				6E9D4E7729A10AD70026ACDF /* BiographyViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -165,9 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E9D4E7429A10A840026ACDF /* AboutMeViewController.swift in Sources */,
 				6EAF31D7299ACF0100CCDDB6 /* LoginViewController.swift in Sources */,
 				6EAF31E7299ADEF300CCDDB6 /* WelcomeViewController.swift in Sources */,
 				6EAF31D3299ACF0100CCDDB6 /* AppDelegate.swift in Sources */,
+				6E9D4E7829A10AD70026ACDF /* BiographyViewController.swift in Sources */,
+				6E9D4E7229A102D60026ACDF /* User.swift in Sources */,
+				6E9D4E7629A10AB00026ACDF /* PetProjectViewController.swift in Sources */,
 				6EAF31D5299ACF0100CCDDB6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
