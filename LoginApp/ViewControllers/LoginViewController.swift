@@ -15,7 +15,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet var forgotNameButton: UIButton!
     @IBOutlet var forgotPasswordButton: UIButton!
     
-    private let correctUserName = "user"
+    private let correctUserName = "1"
     private let correctPassword = "1"
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -23,11 +23,12 @@ final class LoginViewController: UIViewController {
         view.endEditing(true)
     }
     
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.user = correctUserName
     }
-    
+    */
     
     @IBAction func logInButtonPressed() {
         guard passwordTF.text == correctPassword, userNameTF.text == correctUserName
